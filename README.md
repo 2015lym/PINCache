@@ -52,7 +52,7 @@ NSLog(@"3 for the price of 1: %d", [[[PINCache sharedCache] diskCache] byteCount
 **Swift**
 ```swift
 let images = [image, image, image]
-PINCache.shared.setObject(images, forKey: "images")
+PINCache.shared().setObject(images, forKey: "images")
 print("3 for the prices of 1: %d", PINCache.shared.diskCache.byteCount)
 ```
 
